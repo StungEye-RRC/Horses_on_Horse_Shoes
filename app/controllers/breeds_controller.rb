@@ -1,8 +1,12 @@
 class BreedsController < ApplicationController
   # GET /
   # GET /breeds
-  def index; end
+  def index
+    @breeds = Breed.order(:name)
+  end
 
   # GET /breeds/:id
-  def show; end
+  def show
+    @breed = Breed.find(params[:id])
+  end
 end
