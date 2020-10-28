@@ -1,24 +1,15 @@
-# README
+# Horses on Horse Shoes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+After cloning the repo:
 
-Things you may want to cover:
+```
+cd Horses_on_Horse_Shoes
+bundle install
+yarn install
+rails db:migrate
+rails db:seed
+```
 
-* Ruby version
+And then run the Rails server: `rails s`
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Once we start using React with this project you will also want to run the webpack dev server in another WSL tab: `bin/webpack-dev-server`
